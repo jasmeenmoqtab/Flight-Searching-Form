@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flight Search</title>
+</head>
+<body>
+
+    <h1>Flight Search</h1>
+
+    <form>
+
+        <h3>Trip Type</h3>
+        <input type="radio" name="trip_type">oneway         <br>
+        <input type="radio" name="trip_type"> round trip
+        <br>
+        <input type="radio" name="trip_type">multicity
+
+        <hr>
+
+        <h3>From &amp; To</h3>
+
+        From:
+        <input type="text" name="from" placeholder="Departure City / Airport" required>
+        <br><br>
+
+       To:
+        <input type="text" name="to" placeholder="Arrival City / Airport" required>
+
+        <hr>
+
+        <h3>Travel Dates</h3>
+
+       Departure Date:
+        <input type="date" name="depart_date" required>
+        <br><br>
+
+        Return Date:
+        <input type="date" name="return_date">
+
+        <hr>
+
+        <h3>Passengers</h3>
+
+        Adults (12+):
+        <input type="number" name="adults" min="1" max="9" value="1">
+        <br><br>
+
+      Children (2-11):
+        <input type="number" name="children" min="0" max="9" value="0">
+        <br><br>
+
+       Infants (under 2):
+        <input type="number" name="infants" min="0" max="9" value="0">
+<br><br>
+        <hr>
+
+        <h3>Travel Class</h3>
+
+        <select>
+            <option>Economy</option>
+            <option>Premium Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
+
+        <hr>
+
+        <h3>Preferences</h3>
+
+        <input type="checkbox" name="direct_flights">Direct flight Only
+                <br>
+        <input type="checkbox" name="flexible_dates> Flexible Dates
+        
+        <br>
+        <input type="checkbox" name="refundable">Refundable
+      
+
+        <hr>
+
+        <h3>Preferred Airline (optional)</h3>
+
+        <select>
+            <option>Any Airline</option>
+            <option>IndiGo</option>
+            <option>Air India</option>
+            <option>Vistara</option>
+            <option>SpiceJet</option>
+            <option>Akasa Air</option>
+        </select>
+
+        <hr>
+
+        <h3>Budget Range (per person)</h3>
+
+       Minimum (₹)
+        <input type="number" name="min_budget" min="0" step="500">
+        <br><br>
+
+       Maximum (₹):
+        <input type="number" id="max_budget" name="max_budget" min="0" step="500">
+
+        <hr>
+
+        <h3>Contact Details</h3>
+
+     Email:
+        <input type="email"  name="email" placeholder="you@example.com" required>
+        <br><br>
+
+    Phone Number:
+        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX">
+
+        <hr>
+
+        <button type="submit">Search Flights</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</body>
+</html>
